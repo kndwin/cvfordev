@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app'
 import { GeistProvider, CssBaseline, Themes, GeistUIThemesBreakpoints
 } from '@geist-ui/react'
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps): JSX.Element {
 	const breakpoints: GeistUIThemesBreakpoints = {
 		xs: { min: '0', max: '600px' },
 		sm: { min: '600px', max: '900px' },

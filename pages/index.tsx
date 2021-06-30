@@ -2,16 +2,18 @@ import Head from 'next/head'
 import { Layout } from 'components'
 import Typist from 'react-text-typist'
 import { BiPencil } from 'react-icons/bi'
-import { Text, Row, Link, Button, Page } from '@geist-ui/react'
+import { Text, Row, Link, Button } from '@geist-ui/react'
 
-export default function Home () {
+export default function Home (): JSX.Element {
 	return (
 		<Layout>
 			<Head>
 			</Head>
 			<Row justify='center' style={{ margin: '3em 0'}}>
 				<Text h1>
-					write resumes, get interviews
+					write resumes 
+					<br />
+					get interviews
 				</Text>
 			</Row>
 			<Row  justify='center' style={{ marginBottom: '5em'}}>
@@ -20,10 +22,10 @@ export default function Home () {
 					<br />
 					<Text b>
 						<Typist 
-							deletingSpeed={100}
-							pauseTime={2500}
+							deletingSpeed={65}
+							pauseTime={2000}
 							cursorBlinkSpeed={1000} 
-							typingSpeed={120} sentences={[
+							typingSpeed={80} sentences={[
 								'software engineers',  
 								'full-stack engineers',
 								'front-end engineers', 

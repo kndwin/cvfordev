@@ -1,15 +1,17 @@
-import { Spacer, Text, Link, Button, Page } from '@geist-ui/react'
+import { Spacer, Text, Link, Page } from '@geist-ui/react'
+import { BiPencil } from 'react-icons/bi'
 
 type LayoutProps = {
 	children: React.ReactNode,
 	fullScreen?: boolean
 }
 
-export default function Layout({ children, fullScreen=false }: LayoutProps) {
+export default function Layout({ children, fullScreen=false }: LayoutProps): JSX.Element {
 	return (
 		<Page size={`${fullScreen ? '' : 'small'}`}>
 			<Page.Header style={{ padding: '1em', display: `${fullScreen ? 'block' : 'none'}`}}>
-				<Text b>
+				<Text b style={{ display: 'flex', alignItems: 'center'}}>
+					<BiPencil style={{ marginRight: '0.5em'}} />
 					cvfor.dev
 				</Text>
 			</Page.Header>
