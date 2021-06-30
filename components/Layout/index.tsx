@@ -1,4 +1,5 @@
 import { Spacer, Text, Link, Page } from '@geist-ui/react'
+import {useEffect, useState} from 'react'
 import { BiPencil } from 'react-icons/bi'
 
 type LayoutProps = {
@@ -7,6 +8,12 @@ type LayoutProps = {
 }
 
 export default function Layout({ children, fullScreen=false }: LayoutProps): JSX.Element {
+	const [mounted, setMounted] = useState<boolean>(false)
+	useEffect(() => {
+		setMounted(true)
+	},[])
+	if (!mounted) { return null }
+
 	return (
 		<Page size={`${fullScreen ? '' : 'small'}`}>
 			<Page.Header style={{ padding: '1em', display: `${fullScreen ? 'block' : 'none'}`}}>
