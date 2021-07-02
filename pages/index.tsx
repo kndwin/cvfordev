@@ -9,14 +9,17 @@ export default function Home (): JSX.Element {
 		<Layout>
 			<Head>
 			</Head>
-			<Row justify='center' style={{ margin: '3em 0'}}>
-				<Text h1>
+			<Row justify='center' style={{ marginTop: '3em'}}>
+				<Text h1 style={{ fontSize: '5em'}}>
 					write resumes 
-					<br />
-					get interviews
 				</Text>
 			</Row>
-			<Row  justify='center' style={{ marginBottom: '5em'}}>
+			<Row justify='center' style={{ marginBottom: '3em'}}>
+				<Text h1>
+					that get interviews
+				</Text>
+			</Row>
+			<Row justify='center' style={{ marginBottom: '5em'}}>
 				<Text style={{ fontSize: '1.5em', width: '20em'} }>
 					Markdown editor that helps
 					<br />

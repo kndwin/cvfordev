@@ -1,0 +1,41 @@
+#__next ,html, body {
+	height: 100%; 
+	margin: 0;
+	padding: 0; 
+}
+
+ .EasyMDEContainer, .CodeMirror { 
+	height: 100% !important; 
+	max-height: calc(100vh - 9em);
+	overflow: auto; 
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: black white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: 2px solid white;
+}
+
+
+@media print {
+	html, body {
+		height:100vh;
+		margin: 0 !important;
+		padding: 0 !important;
+		overflow: hidden;
+	}
+}

@@ -1,0 +1,62 @@
+.preview {
+	border: 1px solid #000;
+	height: 100%; 
+	padding: 1em; 
+	h2 {
+		font-size: 1.5em; 
+	}
+
+	h1 {
+		margin: 0; 
+	}
+
+	h2, h3, h4 {
+		margin: .1em 0 .1em 0
+	}
+	p, li {
+		margin: 0;
+	}
+
+	li {
+		margin: 0 0 0 5px; 
+	}
+
+	ul {
+		margin: 0 .7em .7em .7em;
+	}
+	img {
+		margin: 0 0.2em; 
+	}
+	img[alt$='icon'] {
+		display: block;
+		width: 50px; 
+		height: 50px;
+		float: none!important;
+	}
+
+	li::before {
+		content: '●';
+		color: black;
+	}
+	@media print {
+		border: none; 
+		overflow: hidden;
+		html, body {
+			height:100vh;
+			margin: 0 !important;
+			padding: 0 !important;
+			overflow: hidden;
+		}
+	}
+	max-height: calc(100vh - 9em);
+	overflow: auto; 
+}
+
+.printArea {
+	padding: 0;
+	height: 100%;
+	@media print {
+		overflow: hidden;
+		padding: 1em; 
+	}
+}
