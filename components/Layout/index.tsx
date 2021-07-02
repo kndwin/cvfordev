@@ -12,7 +12,6 @@ type LayoutProps = {
 	fullScreen?: boolean
 }
 
-
 export default function Layout({ children, fullScreen=false }: LayoutProps): JSX.Element {
 	const [mounted, setMounted] = useState<boolean>(false)
   const [options, setOptions] = useState([])
@@ -79,7 +78,7 @@ export default function Layout({ children, fullScreen=false }: LayoutProps): JSX
 								options={options} 
 								onSearch={(e) => searchHandler(e)}
 								onSelect={(e) => selectedOption(e)}
-								placeholder='Search for job templates' />
+								placeholder='Search for resume template' />
 							<Button auto onClick={() => handlePrint()}>
 								Print
 							</Button>

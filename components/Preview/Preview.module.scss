@@ -17,12 +17,16 @@
 		margin: 0;
 	}
 
+	ol {
+		margin: 0 0 0 12px; 
+	}
+
 	li {
-		margin: 0 0 0 5px; 
+		margin: 0 0 0 10px; 
 	}
 
 	ul {
-		margin: 0 .7em .7em .7em;
+		margin: 0 0 0 .7em;
 	}
 	img {
 		margin: 0 0.2em; 
@@ -34,29 +38,37 @@
 		float: none!important;
 	}
 
-	li::before {
-		content: '●';
-		color: black;
+	ol > li::before {
+		content: ''
 	}
+
+	ul > li:before {
+		content: '●  ';
+		color: black;
+		position: sticky; 
+		width: 18px; 
+	}
+
 	@media print {
 		border: none; 
 		overflow: hidden;
+		max-height: 100vh;
+		height: 100%; 
+		padding: 1em;
 		html, body {
-			height:100vh;
-			margin: 0 !important;
-			padding: 0 !important;
+			height: 100%; 
 			overflow: hidden;
 		}
 	}
 	max-height: calc(100vh - 9em);
-	overflow: auto; 
+	overflow-y: auto; 
 }
 
 .printArea {
-	padding: 0;
 	height: 100%;
 	@media print {
-		overflow: hidden;
-		padding: 1em; 
+		padding: 1em;
+		max-height: 100vh;
+		overflow: clip;
 	}
 }

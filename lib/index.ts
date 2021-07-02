@@ -1,34 +1,16 @@
 export const templateOptions = [
-{ 
-	label: "Support Engineering", 
+{
+	label: "Software Engineer - Sample 1", 
 	content: `<div style="display: flex; justify-content: space-between; align-items: center">
-<strong>GitHub: /kndwin <br/>04123456789</strong>
-<h1>Kevin Nguyen </h1>
-<strong>me@kndwin.dev<br/>http://kndwin.dev</strong>
+<strong>GitHub: @githubHandle <br/>04123456789</strong>
+<h1>First Last </h1>
+<strong>first.last@email<br/>http://myportfolio.com</strong>
 </div>
 
-
-## Education
-<div style="display: flex; justify-content: space-between; align-items: baseline">
-<h4> UNSW - Bachelor of Engineering (Honours) / Commerce 
-</h4>
-<strong>2014 - 2020</strong>
-</div>
-
-- **Mechatronics** and **Information Systems** (Credit average).
-- **Honours thesis** (Distinction): Integrating communication platforms between different operating systems.
-<div style="display: flex; justify-content: space-between; align-items: baseline">
-<h4>Amazon Developer Associate Certificate 
-<img src="https://simpleicons.org/icons/amazonaws.svg" height="20px"/>
-</h4>
-<strong> Vaild till 2024</strong>
-</div>
-
-#### 
 ## Experience
 
 <div style="display: flex; justify-content: space-between; align-items: baseline">
-<h4> Appian - Solution Engineer
+<h4> Software Engineer - Job 1
 <img src="https://simpleicons.org/icons/linux.svg"  height="20px"/> 
 <img src="https://simpleicons.org/icons/amazonaws.svg"  height="20px"/>
 <img src="https://simpleicons.org/icons/gnubash.svg" height="20px"/>
@@ -36,13 +18,12 @@ export const templateOptions = [
 <strong>Jan 2020 - Present</strong>
 </div>
 
--  Resolved support cases that touches everything Appian.
-- **Appian's stack**: Application servers (Tomcat, JBoss), Web servers (IIS, Apache), 
-		RDBMS (MySQL/Mariadb), Apache Kafka, Elasticsearch, Integrations with Appian.
-- **Other**: AWS Cloud architecture, Networking/VPN(ipsec), Linux (SSH/busybox tools), Accessibility issues (WCAG), Resource contentions (CPU/Memory/Threads).
+- Sit repudiandae consectetur nam ullam iusto aspernatur. Expedita aliquam temporibus
+- Consectetur esse pariatur quos dignissimos cupiditate? Unde inventore suscipit necessitatibus maxime.
+- Lorem nemo iusto nulla eius corporis quia Eaque unde veritatis consectetur itaque error
 
 <div style="display: flex; justify-content: space-between; align-items: baseline">
-<h4> Pitbull BSC - Volunteer Developer 
+<h4> Software Engineer - Job 2
 <img src="https://simpleicons.org/icons/nodedotjs.svg" height="20px"/>
 <img src="https://simpleicons.org/icons/solidity.svg"  height="20px"/> 
 <img src="https://simpleicons.org/icons/nextdotjs.svg" height="20px"/> 
@@ -51,13 +32,42 @@ export const templateOptions = [
 <strong>Mar 2021 - Current</strong>
 </div>
               
-- Built Telegram price bot with NodeJS, AWS Gateway, AWS Lambda and SLS.
-- Building PitStop which ultilises Nextjs, ethersjs and web3modal.
-- Building PitChart using GraphQL to BitQuery to displays OLHC with react-financial-chart.
+- Dolor excepturi nemo sequi fuga esse Iusto iste quis soluta at
+- Sit esse maxime itaque sed adipisci saepe voluptates. Laudantium perspiciatis odit enim eum adipisci.
+
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h4> Software Engineer - Job 2
+<img src="https://simpleicons.org/icons/nodedotjs.svg" height="20px"/>
+<img src="https://simpleicons.org/icons/solidity.svg"  height="20px"/> 
+<img src="https://simpleicons.org/icons/nextdotjs.svg" height="20px"/> 
+<img src="https://simpleicons.org/icons/amazonaws.svg"  height="20px"/>  
+</h4>
+<strong>Mar 2021 - Current</strong>
+</div>
+              
+- Dolor excepturi nemo sequi fuga esse Iusto iste quis soluta at
+- Sit esse maxime itaque sed adipisci saepe voluptates. Laudantium perspiciatis odit enim eum adipisci.
+
+
+
+## Education
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h4> University of Space and Time (Software Engineering)
+</h4>
+<strong>2014 - 2020</strong>
+</div>
+
+- **Honours thesis** (Distinction): Communication platforms between different operating systems.
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h4>Amazon Developer Associate Certificate 
+<img src="https://simpleicons.org/icons/amazonaws.svg" height="20px"/>
+</h4>
+<strong> Vaild till 2024</strong>
+</div>
 
 ## Projects
 <div style="display: flex; justify-content: space-between; align-items: baseline">
-<h4> Online resume builder
+<h4> Project 1
 <img src="https://simpleicons.org/icons/nextdotjs.svg" height="20px"/> 
 <img src="https://simpleicons.org/icons/sass.svg"  height="20px"/> 
 <img src="https://simpleicons.org/icons/markdown.svg"  height="20px"/> 
@@ -65,7 +75,33 @@ export const templateOptions = [
 <strong>June 2021 -  Present</strong>
 </div>
 
-- Built online resume builder using Nextjs for React framework, zustand for statement management and Jest for unit testing
+- Ipsum provident velit consequatur sequi sunt. Minima ratione rem error alias blanditiis? Quidem!
+- Amet animi nostrum natus facere beatae minima, quis! Voluptate cum mollitia nam.
+
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h4> Project 2
+<img src="https://simpleicons.org/icons/nodedotjs.svg" height="20px"/> 
+<img src="https://simpleicons.org/icons/amazonaws.svg"  height="20px"/> 
+<img src="https://simpleicons.org/icons/graphql.svg"  height="20px"/> 
+</h4>
+<strong>Jan 2021 -  Apr 2021</strong>
+</div>
+
+- Ipsum provident velit consequatur sequi sunt. Minima ratione rem error alias blanditiis? Quidem!
+- Amet animi nostrum natus facere beatae minima, quis! Voluptate cum mollitia nam.
+- Ipsum voluptatibus quisquam fugit eligendi similique ab Laborum earum commodi unde cupiditate.
+
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h4> Project 3
+<img src="https://simpleicons.org/icons/nodedotjs.svg" height="20px"/> 
+<img src="https://simpleicons.org/icons/express.svg"  height="20px"/> 
+<img src="https://simpleicons.org/icons/postgresql.svg"  height="20px"/> 
+</h4>
+<strong>Jan 2021 -  Apr 2021</strong>
+</div>
+
+- Ipsum provident velit consequatur sequi sunt. Minima ratione rem error alias blanditiis? Quidem!
+- Amet animi nostrum natus facere beatae minima, quis! Voluptate cum mollitia nam.
 
 ## Toolbox
 **Front-end:** 
@@ -89,63 +125,4 @@ export const templateOptions = [
 	
 	
 	`
-}, {
-	label: "Junior Frontend", 
-	content: `<div style="display: flex; justify-content: space-between, align-items: center">
-<p>GitHub: /kndwin <br/>04123456789</p>
-<h1>Kevin Nguyen </h1>
-<p>me@kndwin.dev<br/>http://kndwin.dev</p>
-</div>
-
-## Education
-<div style="display: flex; justify-content: space-between; align-items: baseline">
-<h4>University of New South Wales - Bachelor of Engineering / Commere </h4>
-<strong>Dec 2020 - Jan 2021</strong>
-</div>
-
-- 
-## Experience
-<div style="display: flex; justify-content: space-between; align-items: baseline">
-<h4> Appian - Solution Engineer </h4>
-<strong>Dec 2020 - Jan 2021</strong>
-</div>
-
-- Engineered modern applications with Java, JavaScript, SQL Server, and No SQL.
-- Built innovative microservices and Web Services (incl. SOA/SOAP/REST/XML).
-- Utilized Cloud Foundry for efficient building on top of Kubernetes.
-- Efficiently deployed and integrated software engineered by team and updated integration/deployment scripts to improve continuous integration practices.
-- Liaised with Product Managers to identify minimum viable product requirements and clearly defined feature sets into well-scoped user stories for individual team members.
-
-## Projects
-<div style="display: flex; justify-content: space-between">
-
-#### Microsoft
-Dec 2020 - Jan 2021
-
-</div>
-
-- Did this got that, I mean it! I did
-- Really did studd, like a lot of stuff, here's the metrics to  prove it!
-
-<div style="display: flex; justify-content: space-between">
-
-#### Microsoft
-Dec 2020 - Jan 2021
-
-</div>
-
-
-- Did this got that, I mean it! I did
-- Really did studd, like a lot of stuff, here's the metrics to  prove it!
-
-
-## Toolkit 
-**Frontend:** 
-<img src='http://simpleicons.org/icons/html5.svg' height='15px' /> HTML5
-<img src='http://simpleicons.org/icons/css3.svg' height='15px' /> CSS3
-<img src='http://simpleicons.org/icons/javascript.svg' height='15px' /> Javascript
-<img src='http://simpleicons.org/icons/react.svg' height='15px' /> React
-
-**Interest**: 
-`
 }]

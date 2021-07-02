@@ -8,7 +8,9 @@ type MarkdownState = {
 }
 
 const useMarkdownStore = create<MarkdownState>((set) => ({
-	text: '',
+	text: `# Start writing 📝
+## or try one of our resume templates 📄
+`,
 	printRef: null,
 	setPrintRef: (ref) => set({ printRef: ref}),
 	setText: (text) => set({ text: text })
