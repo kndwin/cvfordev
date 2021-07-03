@@ -1,7 +1,7 @@
 export const templateOptions = [
-{
-	label: "Software Engineer - Sample 1", 
-	content: `<div style="display: flex; justify-content: space-between; align-items: center">
+  {
+    label: 'Software Engineer - Sample 1',
+    content: `<div style="display: flex; justify-content: space-between; align-items: center">
 <strong>GitHub: @githubHandle <br/>04123456789</strong>
 <h1>First Last </h1>
 <strong>first.last@email<br/>http://myportfolio.com</strong>
@@ -48,8 +48,6 @@ export const templateOptions = [
 - Dolor excepturi nemo sequi fuga esse Iusto iste quis soluta at
 - Sit esse maxime itaque sed adipisci saepe voluptates. Laudantium perspiciatis odit enim eum adipisci.
 
-
-
 ## Education
 <div style="display: flex; justify-content: space-between; align-items: baseline">
 <h4> University of Space and Time (Software Engineering)
@@ -58,12 +56,6 @@ export const templateOptions = [
 </div>
 
 - **Honours thesis** (Distinction): Communication platforms between different operating systems.
-<div style="display: flex; justify-content: space-between; align-items: baseline">
-<h4>Amazon Developer Associate Certificate 
-<img src="https://simpleicons.org/icons/amazonaws.svg" height="20px"/>
-</h4>
-<strong> Vaild till 2024</strong>
-</div>
 
 ## Projects
 <div style="display: flex; justify-content: space-between; align-items: baseline">
@@ -122,7 +114,6 @@ export const templateOptions = [
   <img src="https://simpleicons.org/icons/linux.svg" alt="linux" height="15px"/> Linux
   <img src="https://simpleicons.org/icons/solidity.svg" alt="git" height="15px"/> Solidity
   <img src="https://simpleicons.org/icons/threedotjs.svg" alt="git" height="15px"/> Three.js
-	
-	
-	`
-}]
+`,
+  },
+]

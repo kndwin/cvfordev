@@ -1,13 +1,13 @@
 .editor {
-	height: 100%;
-	overflow-y: auto; 
-	max-height: calc(100vh - 9em);
-	scrollbar-color: black white; 
-	border: 1px solid #000;
-	p {
-		display: flex; 
-	}
-	img {
-		display: block;
-	}
+  height: 100%;
+  overflow-y: auto;
+  max-height: calc(100vh - 9em);
+  scrollbar-color: black white;
+  border: 1px solid #000;
+  p {
+    display: flex;
+  }
+  img {
+    display: block;
+  }
 }

@@ -6,8 +6,8 @@ import * as THREE from 'three'
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
-import {useFrame, useThree} from '@react-three/fiber'
-import {useMousePosition} from 'hooks'
+import { useFrame, useThree } from '@react-three/fiber'
+import { useMousePosition } from 'hooks'
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -27,43 +27,44 @@ type GLTFResult = GLTF & {
 }
 //
 //declare global {
-	//namespace JSX {
-		//interface IntrinsicElements {
-			//group: any
-			//mesh: any
-		//}
-	//}
+//namespace JSX {
+//interface IntrinsicElements {
+//group: any
+//mesh: any
+//}
+//}
 //}
 //
-export default function Model(props: JSX.IntrinsicElements['group']): JSX.Element {
+export default function Model(
+  props: JSX.IntrinsicElements['group']
+): JSX.Element {
   const group = useRef<THREE.Group>()
   const { nodes, materials } = useGLTF('/Pencil.glb') as GLTFResult
 
-	const { x, y } = useMousePosition()
-	const { camera } = useThree()
+  const { x, y } = useMousePosition()
+  const { camera } = useThree()
 
+  const vectorToLookAt = new THREE.Vector3(x, -y, 1).unproject(camera)
 
-	const vectorToLookAt = new THREE.Vector3( x, -y, 1).unproject(camera)
-
-	useFrame(() => {
-		if (group.current) {
-			group.current.lookAt(vectorToLookAt)
-		}
-	})
+  useFrame(() => {
+    if (group.current) {
+      group.current.lookAt(vectorToLookAt)
+    }
+  })
 
   return (
-    <group up={[0,1,0]} ref={group} {...props} dispose={null}>
+    <group up={[0, 1, 0]} ref={group} {...props} dispose={null}>
       <mesh
         geometry={nodes.Cylinder.geometry}
         material={materials.Material}
         position={[0, -0.88, 0]}
         scale={[1.1, 7.13, 1.1]}
       />
-      <mesh 
-				geometry={nodes.Cone.geometry} 
-				material={materials['Material.003']} 
-				position={[0, 7.51, 0]} 
-			/>
+      <mesh
+        geometry={nodes.Cone.geometry}
+        material={materials['Material.003']}
+        position={[0, 7.51, 0]}
+      />
       <mesh
         geometry={nodes.Cone001.geometry}
         material={materials['Material.004']}
@@ -76,11 +77,11 @@ export default function Model(props: JSX.IntrinsicElements['group']): JSX.Elemen
         position={[0, -4.73, 0]}
         scale={[1.21, 0.2, 1.21]}
       />
-      <mesh 
-				geometry={nodes.Cylinder002.geometry} 
-				material={materials['Material.002']} 
-				position={[0, -5.92, 0]} 
-			/>
+      <mesh
+        geometry={nodes.Cylinder002.geometry}
+        material={materials['Material.002']}
+        position={[0, -5.92, 0]}
+      />
     </group>
   )
 }

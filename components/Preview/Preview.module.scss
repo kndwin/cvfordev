@@ -1,74 +1,78 @@
 .preview {
-	border: 1px solid #000;
-	height: 100%; 
-	padding: 1em; 
-	h2 {
-		font-size: 1.5em; 
-	}
+  border: 1px solid #000;
+  height: 100%;
+  padding: 1em;
+  h2 {
+    font-size: 1.5em;
+    margin: 0.7em 0 0 0;
+  }
 
-	h1 {
-		margin: 0; 
-	}
+  h1 {
+    margin: 0;
+  }
 
-	h2, h3, h4 {
-		margin: .1em 0 .1em 0
-	}
-	p, li {
-		margin: 0;
-	}
+  h3,
+  h4 {
+    margin: 0.1em 0 0.1em 0;
+  }
+  p,
+  li {
+    margin: 0;
+  }
 
-	ol {
-		margin: 0 0 0 12px; 
-	}
+  ol {
+    margin: 0 0 0 12px;
+  }
 
-	li {
-		margin: 0 0 0 10px; 
-	}
+  li {
+    margin: 0 0 0 10px;
+  }
 
-	ul {
-		margin: 0 0 0 .7em;
-	}
-	img {
-		margin: 0 0.2em; 
-	}
-	img[alt$='icon'] {
-		display: block;
-		width: 50px; 
-		height: 50px;
-		float: none!important;
-	}
+  ul {
+    margin: 0 0 0 0.7em;
+  }
+  img {
+    margin: 0 0.2em;
+  }
+  img[alt$='icon'] {
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: none !important;
+  }
 
-	ol > li::before {
-		content: ''
-	}
+  ol > li::before {
+    content: '';
+  }
 
-	ul > li:before {
-		content: '●  ';
-		color: black;
-		position: sticky; 
-		width: 18px; 
-	}
+  ul > li:before {
+    content: '●  ';
+    color: black;
+    position: sticky;
+    width: 18px;
+  }
 
-	@media print {
-		border: none; 
-		overflow: hidden;
-		max-height: 100vh;
-		height: 100%; 
-		padding: 1em;
-		html, body {
-			height: 100%; 
-			overflow: hidden;
-		}
-	}
-	max-height: calc(100vh - 9em);
-	overflow-y: auto; 
+  @media print {
+    border: none;
+    overflow: hidden;
+    max-height: 100vh;
+    height: 100%;
+    padding: 1em;
+    html,
+    body {
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+  max-height: calc(100vh - 9em);
+  overflow-y: auto;
 }
 
 .printArea {
-	height: 100%;
-	@media print {
-		padding: 1em;
-		max-height: 100vh;
-		overflow: clip;
-	}
+  height: 100%;
+  @media print {
+    padding: 1em;
+    max-height: 100vh;
+    overflow: clip;
+  }
 }
