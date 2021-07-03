@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { Layout } from 'components'
 import Typist from 'react-text-typist'
 import { BiPencil } from 'react-icons/bi'
@@ -7,7 +6,6 @@ import { Text, Row, Link, Button } from '@geist-ui/react'
 export default function Home(): JSX.Element {
   return (
     <Layout>
-      <Head></Head>
       <Row justify="center" style={{ marginTop: '3em' }}>
         <Text h1 style={{ fontSize: '5em' }}>
           write resumes
