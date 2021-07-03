@@ -13,7 +13,7 @@ const useMarkdownStore = create<MarkdownState>((set) => ({
 `,
 	printRef: null,
 	setPrintRef: (ref) => set({ printRef: ref}),
-	setText: (text) => set({ text: text })
+	setText: (text) => set({ text: text }) 
 }))
 
 export default useMarkdownStore
