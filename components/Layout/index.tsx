@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { AutoComplete, Row, Button, Text, Link } from '@geist-ui/react'
 import { templateOptions } from 'lib'
 import { Suspense, useEffect, useState } from 'react'
@@ -61,6 +62,23 @@ export default function Layout({
       <div
         className={`${utils.layout} ${fullScreen && utils.layoutFullscreen}`}
       >
+        <Head>
+          <title>resumes for dev</title>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+          <meta name="description" content="Resumes builder for developers" />
+          <link rel="icon" href="/favicon.ico" />
+          <meta property="og:title" content="Resumes for dev" />
+          <meta
+            property="og:description"
+            content="Resumes builder for developers"
+          />
+          <meta property="og:url" content="https://kndwin.dev/" />
+          <meta property="og:type" content="website" />
+        </Head>
+
         <header className="noPrintArea">
           {fullScreen && (
             <Row
