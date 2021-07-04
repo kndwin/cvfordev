@@ -6,6 +6,7 @@ import {
   GeistUIThemesBreakpoints,
 } from '@geist-ui/react'
 import 'styles/global.scss'
+import { usePanelBear } from 'hooks'
 
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
   const breakpoints: GeistUIThemesBreakpoints = {
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
     breakpoints,
   })
 
+  usePanelBear(process.env.PANELBEAR_ID, {})
   return (
     <GeistProvider themes={[myTheme]} themeType="myTheme">
       <CssBaseline />

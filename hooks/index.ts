@@ -1,3 +1,5 @@
+import * as Panelbear from '@panelbear/panelbear-js'
+import { useRouter } from 'next/dist/client/router'
 import { useState, useEffect } from 'react'
 
 type MouseCoordinate = {
@@ -17,4 +19,17 @@ export const useMousePosition = (): MouseCoordinate => {
     window.addEventListener('mousemove', updateMousePosition)
   }, [])
   return mousePosition
+}
+
+export const usePanelBear = (site, config = {}) => {
+  const router = useRouter()
+  useEffect(() => {
+    Panelbear.load(site, config)
+    Panelbear.trackPageview()
+    const handleRouteChange = () => Panelbear.trackPageview()
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [])
 }
