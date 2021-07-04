@@ -21,6 +21,7 @@ export const templateOptions = [
 - Sit repudiandae consectetur nam ullam iusto aspernatur. Expedita aliquam temporibus
 - Consectetur esse pariatur quos dignissimos cupiditate? Unde inventore suscipit necessitatibus maxime.
 - Lorem nemo iusto nulla eius corporis quia Eaque unde veritatis consectetur itaque error
+- Sit esse maxime itaque sed adipisci saepe voluptates. Laudantium perspiciatis odit enim eum adipisci.
 
 <div style="display: flex; justify-content: space-between; align-items: baseline">
 <h4> Software Engineer - Job 2
@@ -34,9 +35,10 @@ export const templateOptions = [
               
 - Dolor excepturi nemo sequi fuga esse Iusto iste quis soluta at
 - Sit esse maxime itaque sed adipisci saepe voluptates. Laudantium perspiciatis odit enim eum adipisci.
+- Sit esse maxime itaque sed adipisci saepe voluptates. Laudantium perspiciatis odit enim eum adipisci.
 
 <div style="display: flex; justify-content: space-between; align-items: baseline">
-<h4> Software Engineer - Job 2
+<h4> Software Engineer - Job 3
 <img src="https://simpleicons.org/icons/nodedotjs.svg" height="20px"/>
 <img src="https://simpleicons.org/icons/solidity.svg"  height="20px"/> 
 <img src="https://simpleicons.org/icons/nextdotjs.svg" height="20px"/> 
@@ -56,6 +58,12 @@ export const templateOptions = [
 </div>
 
 - **Honours thesis** (Distinction): Communication platforms between different operating systems.
+
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h4> Certificate 1
+</h4>
+<strong>2014 - 2020</strong>
+</div>
 
 ## Projects
 <div style="display: flex; justify-content: space-between; align-items: baseline">

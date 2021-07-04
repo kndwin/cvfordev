@@ -1,9 +1,10 @@
 .preview {
-  border: 1px solid #000;
-  height: 100%;
-  padding: 1em;
-  h2 {
-    font-size: 1.5em;
+	border: 1px solid #000;
+	width: 21cm;
+	height: 29.7cm;
+	padding: 1em;
+	h2 {
+		font-size: 1.5em;
     margin: 0.7em 0 0 0;
   }
 
@@ -57,22 +58,26 @@
     overflow: hidden;
     max-height: 100vh;
     height: 100%;
-    padding: 1em;
     html,
     body {
       height: 100%;
       overflow: hidden;
     }
   }
-  max-height: calc(100vh - 9em);
-  overflow-y: auto;
 }
 
 .printArea {
-  height: 100%;
-  @media print {
-    padding: 1em;
-    max-height: 100vh;
-    overflow: clip;
-  }
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 1em;
+	height: 100%;
+  max-height: calc(100vh - 9em);
+	overflow-y: auto; 
+	border: 1px solid #000;
+	@media print {
+		overflow-y: hidden; 
+		max-height: 100vh;
+		padding: 0; 
+	}
 }

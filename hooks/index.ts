@@ -21,7 +21,7 @@ export const useMousePosition = (): MouseCoordinate => {
   return mousePosition
 }
 
-export const usePanelBear = (site, config = {}) => {
+export const usePanelBear = (site: string, config = {}) => {
   const router = useRouter()
   useEffect(() => {
     Panelbear.load(site, config)

@@ -88,39 +88,38 @@ export default function Layout({
                 justifyContent: 'space-between',
               }}
             >
-              <>
-                <Link href="/">
-                  <Text
-                    b
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                    }}
+              <Link href="/">
+                <Text
+                  b
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                  }}
+                >
+                  <Canvas
+                    style={{ height: '2em', width: '3em' }}
+                    orthographic
+                    camera={{ zoom: 2 }}
                   >
-                    <Canvas
-                      style={{ height: '2em', width: '3em' }}
-                      orthographic
-                      camera={{ zoom: 2 }}
-                    >
-                      <ambientLight intensity={1} />
-                      <Suspense fallback={null}>
-                        <Model />
-                      </Suspense>
-                    </Canvas>
-                    resumesfor.dev
-                  </Text>
-                </Link>
-              </>
+                    <ambientLight intensity={1} />
+                    <Suspense fallback={null}>
+                      <Model />
+                    </Suspense>
+                  </Canvas>
+                  resumesfor.dev
+                </Text>
+              </Link>
               <AutoComplete
                 clearable
-                size="medium"
+                size="large"
+                type="secondary"
                 options={options}
                 onSearch={(e) => searchHandler(e)}
                 onSelect={(e) => selectedOption(e)}
                 placeholder="Search for resume template"
               />
-              <Button auto onClick={() => handlePrint()}>
-                Print
+              <Button type="secondary" auto onClick={() => handlePrint()}>
+                <Text b>Print</Text>
               </Button>
             </Row>
           )}
